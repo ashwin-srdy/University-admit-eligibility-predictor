@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University Admission Predictor</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+	h1,h2{
+		font-family: 'Raleway', sans-serif;
+		color: black;
+	}
+	h2,h1,form,p,b{
+		text-align: left;
+		color: black;
+	}
+	label,p,b{
+		font-family: 'Noto Sans HK', sans-serif;
+		color: black;
+	}
+	.elements{
+		padding-top: 2px;
+	}
+
+</style>
+<body>
+
+	<img src="https://cdn4.vectorstock.com/i/1000x1000/39/73/graduation-hat-stacked-books-school-vector-25773973.jpg" style="position: -webkit-sticky; position: sticky; top: 0;" align="right">
+	<h1 style="font-size: 4rem; text-decoration-line: underline; text-decoration-thickness: auto;">University Admission Predictor</h1>
+	<br>
+	<br>
+	<p style="font-size: 2rem; font-family: 'Raleway', sans-serif;"> <strong> ABOUT </strong></p>
+	<p style="font-size: 2rem; font-family: 'Raleway', sans-serif;">Enter your details to predict whether you'll get an admission or not .</p>
+
+	<form action="/predict" method="post" class="elements" style="font-size: 1rem;">
+		<p style="font-size: 1.7rem; font-family: 'Raleway', sans-serif;"> <strong> DETAILS </strong></p>
+		<p class="elements">GRE Score</p>
+		<p><input type="text" name="gre" value="Score range 0-340" style=" border-radius: 8px;"></p>
+		<p class="elements">TOEFL Score</p>
+		<p><input type="text" name="tofl" value="Score range 0-120" style=" border-radius: 8px;"></p>
+		<p class="elements"><label>University Rating</label> </p>
+		<select name="rating" style=" border-radius: 8px;">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+        </select>
+		<br>
+		<p class="elements">SOP</p>
+		<p><input type="text" name="sop" value="Score range 0-5" style=" border-radius: 8px;"></p>
+		<p class="elements">LOR</p>
+		<p><input type="text" name="lor" value="Score range 0-5" style=" border-radius: 8px;"></p>
+		<p class="elements">CGPA</p>
+		<p><input type="text" name="cgpa" value="Score range 0-10" style=" border-radius: 8px;"></p>
+		<p class="elements"><label>Research</label></p>
+		<select name="research" style=" border-radius: 8px;">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+        </select>
+
+        
+
+
+		<p class="elements"> <input type = "submit" value = "submit" style=" border-radius: 8px;"/> </p>
+	</form>
+
+</body>
+</html>
